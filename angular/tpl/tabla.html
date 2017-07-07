@@ -1,0 +1,32 @@
+<div class="tabla {{clase}}">
+	<div class="titulo">{{titulo}}</div>
+	<div class="cabecera">
+		<div class="fila">
+			<div class="col codigo">Código</div>
+			<div class="col nombre">Nombre</div>
+			<div class="col cod_padre">Cód. padre</div>
+			<div class="col desc_padre">Descripción padre</div>
+		</div>
+	</div>
+	<div class="cuerpo">
+		<span ng-if="!items.length" class="spinner"></span>
+		<div class="fila" ng-if="items.length" ng-repeat="item in items">
+			<div class="col codigo">
+				<span class="etiqueta">Código:</span>
+				<span class="valor">{{item.codigo}}</span>
+			</div>
+			<div class="col nombre">
+				<span class="etiqueta">Nombre:</span>
+				<span class="valor">{{item.nombre}}</span>
+			</div>
+			<div class="col cod_padre">
+				<span class="etiqueta">Cód. padre:</span>
+				<span class="valor">{{item.padre}}</span>
+			</div>
+			<div class="col desc_padre">
+				<span class="etiqueta">Desc. padre:</span>
+				<span class="valor">{{item.desc_padre}}</span>
+			</div>
+		</div>
+	</div>
+</div>

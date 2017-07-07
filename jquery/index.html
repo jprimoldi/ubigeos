@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>UbiGEOs</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../ubigeos.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="tabla departamento">
+				<div class="titulo">DEPARTAMENTO</div>
+				<div class="cabecera"></div>
+				<div class="cuerpo"><span class="spinner"></span></div>
+			</div>
+			<div class="tabla provincia">
+				<div class="titulo">PROVINCIA</div>
+				<div class="cabecera"></div>
+				<div class="cuerpo"><span class="spinner"></span></div>
+			</div>
+			<div class="tabla distrito">
+				<div class="titulo">DISTRITO</div>
+				<div class="cabecera"></div>
+				<div class="cuerpo"><span class="spinner"></span></div>
+			</div>
+		</div>
+		<div data-template="fila" class="fila">
+			<div class="col codigo">
+				<span class="etiqueta">Código:</span>
+				<span class="valor"></span>
+			</div>
+			<div class="col nombre">
+				<span class="etiqueta">Nombre:</span>
+				<span class="valor"></span>
+			</div>
+			<div class="col cod_padre">
+				<span class="etiqueta">Cód. padre:</span>
+				<span class="valor"></span>
+			</div>
+			<div class="col desc_padre">
+				<span class="etiqueta">Desc. padre:</span>
+				<span class="valor"></span>
+			</div>
+		</div>
+		<div data-template="cabecera" class="fila">
+			<div class="col codigo">Código</div>
+			<div class="col nombre">Nombre</div>
+			<div class="col cod_padre">Cód. padre</div>
+			<div class="col desc_padre">Descripción padre</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../utilidades.js"></script>
+	<script type="text/javascript" src="ubigeos-jquery.js"></script>
+</html>

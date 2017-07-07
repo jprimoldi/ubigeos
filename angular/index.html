@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<title>UbiGEOs con AngularJS</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../ubigeos.css" />
+	</head>
+	<body ng-app="ubigeos" ng-controller="UbigeosCtrl as ctrl">
+		<div class="main">
+			<span ng-if="!ctrl.listo" class="spinner"></span>
+			<div ng-if="ctrl.listo">
+				<tabla data-titulo="DEPARTAMENTO" data-items="ctrl.departamento"></tabla>
+				<tabla data-titulo="PROVINCIA" data-items="ctrl.provincia"></tabla>
+				<tabla data-titulo="DISTRITO" data-items="ctrl.distrito"></tabla>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+	<script type="text/javascript" src="../utilidades.js"></script>
+	<script type="text/javascript" src="./ubigeos-ng.js"></script>
+</html>
